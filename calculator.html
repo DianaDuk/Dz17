@@ -1,0 +1,25 @@
+<script>
+    class Calculator {
+        Summ(a, b) {
+            return a + b;
+        }
+        Subtract(a, b) {
+            return a - b;
+        }
+        Multiply(a, b) {
+            return a * b;
+        }
+        Divide(a, b) {
+            if (b === 0) {
+                return "Помилка: Ділення на нуль не дозволено";
+            }
+            return a / b;
+        }
+    }
+
+    const calc = new Calculator();
+    console.log(calc.Summ(5, 3)); 
+    console.log(calc.Subtract(10, 4)); 
+    console.log(calc.Multiply(3, 6)); 
+    console.log(calc.Divide(8, 2)); 
+</script>
